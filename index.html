@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <header>
+      <div class="logo">Logo</div>
+      <div class="header-list">
+        <a href="#">Home</a>
+        <a href="#">F.A.Q.</a>
+        <a href="#">Log In</a>
+      </div>
+    </header>
+  </nav>
+
+  <div class="right-nav">
+    <div class="book-add">
+      <h1>Add a book!</h1>
+      <div class="input-container">
+        <label for="title">Book title:</label>
+        <input class="title" type="text">
+      </div>
+      <div class="input-container">
+        <label for="author">Author:</label>
+        <input class="author" type="text">
+      </div>
+      <div class="input-container">
+        <label for="pages">Page number:</label>
+        <input class="pages" type="number">
+      </div>
+      <button class="add-button">Add</button>
+    </div>
+  </div>
+
+  <main>
+    <div class="main-container">
+      <div class="book-container">
+        <div class="book-title">Book Title</div>
+        <div class="author">Author</div>
+        <div class="pages-read">Pages read <br>
+          <div class="span-container">
+            <input class="read" type="number" value="">
+            <span>/</span>
+            <span class="total">200</span>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="remove">remove</button>
+          <button class="edit">edit</button>
+          <button class="complete">complete</button>
+        </div>
+      </div>
+      <div class="book-container"></div>
+      <div class="book-container"></div>
+      <div class="book-container"></div>
+      <div class="book-container"></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

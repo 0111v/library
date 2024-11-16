@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background-color: antiquewhite;
+  padding: 15px 30px;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 0 24px;
+}
+
+.header-list a {
+  margin: 0 24px;
+}
+
+.right-nav {
+  position: fixed;
+  top: 70px;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  background-color: antiquewhite;
+  padding: 15px;
+}
+
+main {
+  max-width: 100%;
+  margin-top: 70px;
+  margin-right: 280px;
+  padding: 15px;
+}
+
+.main-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  background-color: bisque;
+  padding: 15px;
+
+}
+
+@media (max-width: 1650px) {
+  .main-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1400px) {
+  .main-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1150px) {
+  .main-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.book-container {
+  height: 400px;
+  background-color: aquamarine;
+}
+
+.book-title {
+  height: 40%;
+  width: 100%;
+  place-content: center;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32px;
+}
+
+.author {
+  height: 25%;
+  padding: 0 24px;
+}
+
+.page-number {
+  height: 15%;
+  padding: 0 24px;
+}
+
+.pages-read {
+  height: 20%;
+  width: 100%;
+  place-content: center;
+  text-align: center;
+}
+
+.span-container {
+  display: flex;
+  height: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.read {
+  width: 20%;
+  height: 50%;
+  display: block;
+  font-size: 16px;
+  text-align: center;
+}
+
+.total {
+  width: 20%;
+}
+
+
+.controls {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  gap: 2px;
+
+}
+
+.controls button {
+  flex: 1;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.remove {
+  background-color: red;
+}
+
+.edit {
+  background-color: blue;
+}
+
+.complete {
+  background-color: green;
+}
